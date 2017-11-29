@@ -1,0 +1,14 @@
+{
+    "extensionName": {
+        "message": "Copy all the tab information to the clipboard",
+        "description": "Name of the extension."
+    },
+    "extensionDescription": {
+        "message": "Copy all the tab information to the clipboard.",
+        "description": "Description of the extension."
+    },
+    "menuItemTitle": {
+        "message": "Copy all the tab information to the clipboard",
+        "description": "Title of the menu item."
+    }
+}

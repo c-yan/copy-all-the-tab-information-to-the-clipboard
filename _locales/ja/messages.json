@@ -1,0 +1,14 @@
+{
+    "extensionName": {
+        "message": "Copy all the tab information to the clipboard",
+        "description": "Name of the extension."
+    },
+    "extensionDescription": {
+        "message": "全てのタブの情報をクリップボードにコピーする.",
+        "description": "Description of the extension."
+    },
+    "menuItemTitle": {
+        "message": "全てのタブの情報をクリップボードにコピー",
+        "description": "Title of the menu item."
+    }
+}
