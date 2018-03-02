@@ -18,14 +18,13 @@
         browser.tabs.executeScript({ code: script }).catch(console.log);
     }
 
-    function onCopyAllTabInfoToClipboard(info, tab) {
-        browser.tabs.query({}).then((tabs) => {
-            var result = '';
-            for (var t of tabs) {
-                result += `${t.title} ${t.url}\r\n`;
-            }
-            copyToClipboardWrapper(result);
-        }).catch(console.log);
+    async function onCopyAllTabInfoToClipboard(info, tab) {
+        const tabs = await browser.tabs.query({})
+        let result = '';
+        for (const t of tabs) {
+            result += `${t.title} ${t.url}\r\n`;
+        }
+        copyToClipboardWrapper(result);
     }
 
     browser.menus.onClicked.addListener((info, tab) => {
