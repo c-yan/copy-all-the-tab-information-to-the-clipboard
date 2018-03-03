@@ -15,11 +15,11 @@
                 document.execCommand('copy');
             })(${JSON.stringify(text)});
         `;
-        browser.tabs.executeScript({ code: script }).catch(console.log);
+        browser.tabs.executeScript({ code: script });
     }
 
     async function onCopyAllTabInfoToClipboard(info, tab) {
-        const tabs = await browser.tabs.query({})
+        const tabs = await browser.tabs.query({});
         let result = '';
         for (const t of tabs) {
             result += `${t.title} ${t.url}\r\n`;
