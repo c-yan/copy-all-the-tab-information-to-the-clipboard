@@ -4,7 +4,7 @@
 
     function copyToClipboardWrapper(text) {
         const script = `
-            ((text) => {
+            (text => {
                 function onCopy(event) {
                     document.removeEventListener('copy', onCopy, true);
                     event.stopImmediatePropagation();
